@@ -1,0 +1,3 @@
+ANIMACIÓN: 
+
+Tengo movimientos básicos del jugador y cómo bricar una plataforma desde abajo 
