@@ -5,9 +5,9 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float maxSpeed = 6;
+    public float maxSpeed = 20;
     public float speed = 25f;
-    public float jumpPower = 75f;
+    public float jumpPower = 250f;
     public bool grounded;
     private Rigidbody2D rb2d;
     private Animator anim;
@@ -32,7 +32,9 @@ public class Player : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
-
+        if (Input.GetButtonDown("Jump")&& grounded) {
+            rb2d.AddForce(Vector2.up*jumpPower);
+        }
     }
 
     void FixedUpdate()
@@ -43,13 +45,13 @@ public class Player : MonoBehaviour
 
         //limitng speed of the player
 
-        //if(rb2d.velocity.x>maxSpeed) {
-        //    rb2d.velocity = new Vector2(maxSpeed, rb2d.velocity.y);
-        //}
-        //if (rb2d.velocity.x < -maxSpeed)
-        //{
-        //    rb2d.velocity = new Vector2(-maxSpeed, rb2d.velocity.y);
-        //}
+        if(rb2d.velocity.x>maxSpeed) {
+            rb2d.velocity = new Vector2(maxSpeed, rb2d.velocity.y);
+        }
+        if (rb2d.velocity.x < -maxSpeed)
+        {
+            rb2d.velocity = new Vector2(-maxSpeed, rb2d.velocity.y);
+        }
 
     }
 

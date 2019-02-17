@@ -1039,8 +1039,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 6
-  speed: 25
-  jumpPower: 75
+  speed: 18
+  jumpPower: 250
   grounded: 0
 --- !u!50 &19314320
 Rigidbody2D:
@@ -47588,7 +47588,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.44745636, y: -1.4351368}
+  m_Offset: {x: -0.44745636, y: -1.3834743}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -47599,7 +47599,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8949127, y: 0.7489891}
+  m_Size: {x: 1.8949127, y: 0.6456642}
   m_EdgeRadius: 0
 --- !u!1 &1482188966
 GameObject:
