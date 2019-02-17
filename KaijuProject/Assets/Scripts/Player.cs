@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public bool grounded;
     private Rigidbody2D rb2d;
     private Animator anim;
+    public int numJumps = 0;
 
 
     void Start()
@@ -27,13 +28,14 @@ public class Player : MonoBehaviour
 
         if (Input.GetAxis("Horizontal")< -0.1f) {
             transform.localScale = new Vector3(-1, 1,1);
-        }
+        } 
         if (Input.GetAxis("Horizontal") > -0.1f)
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
-        if (Input.GetButtonDown("Jump")&& grounded) {
+        if (Input.GetButtonDown("Jump")&& grounded && numJumps<1) {
             rb2d.AddForce(Vector2.up*jumpPower);
+            numJumps++;
         }
     }
 

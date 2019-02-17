@@ -27,7 +27,7 @@ public class Fire : MonoBehaviour
     {
         if (inside)
         {
-            Debug.Log("fireball");
+            //Debug.Log("fireball");
             yield return new WaitForSeconds(timeFire);
             Transform ball = Instantiate(fireball, transform.position, transform.rotation);
             Destroy(ball.gameObject, timeDestroy);

@@ -14,13 +14,29 @@ public class GroundCheck : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+
+
         player.grounded = true;
+        player.numJumps = 0;
+        Debug.Log("rererere");
+        //if (collision.CompareTag("fireball")) {
+        //    player.grounded = false;
+        //    Debug.Log("hfaiosjfpoa");
+
+        //}
+        //else {
+        //    player.grounded = true;
+        //    player.numJumps = 0;
+        //    Debug.Log("rererere");
+        //}
 
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+
         player.grounded = true;
+
 
     }
     void OnTriggerExit2D(Collider2D collision)
