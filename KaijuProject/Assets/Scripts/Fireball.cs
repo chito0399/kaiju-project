@@ -19,7 +19,7 @@ public class Fireball : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Tag"))
+        if (other.gameObject.CompareTag("Player"))
         {
             //Restar vidas al jugador
         }
