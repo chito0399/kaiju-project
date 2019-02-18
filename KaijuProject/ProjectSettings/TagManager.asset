@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Key
   - Power
+  - fireball
   layers:
   - Default
   - TransparentFX

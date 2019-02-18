@@ -1042,6 +1042,7 @@ MonoBehaviour:
   speed: 18
   jumpPower: 250
   grounded: 0
+  numJumps: 0
 --- !u!50 &19314320
 Rigidbody2D:
   serializedVersion: 4
@@ -10028,7 +10029,7 @@ GameObject:
   - component: {fileID: 305392017}
   m_Layer: 0
   m_Name: base1 (1)
-  m_TagString: Untagged
+  m_TagString: fireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16418,7 +16419,7 @@ GameObject:
   - component: {fileID: 485893217}
   m_Layer: 0
   m_Name: base1
-  m_TagString: Untagged
+  m_TagString: fireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52527,7 +52528,8 @@ MonoBehaviour:
   player: {fileID: 19314316}
   minCamPos: {x: 18.1, y: 48.2}
   maxCampPos: {x: 296, y: -244}
-  smoothTime: 1
+  smoothTimex: 0.05
+  smoothTimey: 0.05
 --- !u!1 &1674320310
 GameObject:
   m_ObjectHideFlags: 0
@@ -58591,7 +58593,7 @@ GameObject:
   - component: {fileID: 1870703577}
   m_Layer: 0
   m_Name: base1 (2)
-  m_TagString: Untagged
+  m_TagString: fireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64334,7 +64336,7 @@ GameObject:
   - component: {fileID: 2092292093}
   m_Layer: 0
   m_Name: base1 (3)
-  m_TagString: Untagged
+  m_TagString: fireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

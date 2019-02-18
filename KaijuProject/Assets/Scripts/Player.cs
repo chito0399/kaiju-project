@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         anim.SetBool("Grounded", grounded);
-        anim.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
+        anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
 
         if (Input.GetAxis("Horizontal")< -0.1f) {
             transform.localScale = new Vector3(-1, 1,1);
@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
-        if (Input.GetButtonDown("Jump")&& grounded && numJumps<1) {
+        if (Input.GetButtonDown("Jump") && numJumps<2) {
             rb2d.AddForce(Vector2.up*jumpPower);
             numJumps++;
         }
@@ -41,7 +41,20 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+
+        //Vector3 easeVelocity = rb2d.velocity;
+        //easeVelocity.y = rb2d.velocity.y;
+        //easeVelocity.z = 0.0f;
+        //easeVelocity.x *= 0.85f;
         float h = Input.GetAxis("Horizontal");
+
+        ////Fake friction easing the x
+        //if (grounded) {
+        //    rb2d.velocity = easeVelocity;
+        //}
+
+
+        //moving the player
 
         rb2d.AddForce((Vector2.right*speed)*h);
 
