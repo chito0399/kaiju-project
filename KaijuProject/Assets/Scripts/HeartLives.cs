@@ -16,6 +16,6 @@ public class HeartLives : MonoBehaviour
     }
     private void Update()
     {
-        //HeartUI.sprite = HeartSprites[player.curHealth];
+        HeartUI.sprite = HeartSprites[player.curHealth];
     }
 }

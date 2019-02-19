@@ -14,10 +14,16 @@ public class Player : MonoBehaviour
     public int numJumps = 0;
 
 
+    public int curHealth;
+    public int maxHealth=6;
+
+
     void Start()
     {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
+
+        curHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -26,17 +32,28 @@ public class Player : MonoBehaviour
         anim.SetBool("Grounded", grounded);
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
 
-        if (Input.GetAxis("Horizontal")< -0.1f) {
-            transform.localScale = new Vector3(-1, 1,1);
-        } 
+        if (Input.GetAxis("Horizontal") < -0.1f) {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
         if (Input.GetAxis("Horizontal") > -0.1f)
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
-        if (Input.GetButtonDown("Jump") && numJumps<2) {
-            rb2d.AddForce(Vector2.up*jumpPower);
+        if (Input.GetButtonDown("Jump") && numJumps < 2) {
+            rb2d.AddForce(Vector2.up * jumpPower);
             numJumps++;
         }
+
+
+        if (curHealth>maxHealth)
+        {
+            curHealth = maxHealth;
+        }
+        if (curHealth<= 0) {
+            Die();
+        }
+
+
     }
 
     void FixedUpdate()
@@ -68,6 +85,10 @@ public class Player : MonoBehaviour
             rb2d.velocity = new Vector2(-maxSpeed, rb2d.velocity.y);
         }
 
+    }
+    void Die() {
+        Application.LoadLevel(Application.loadedLevel);
+    
     }
 
 }

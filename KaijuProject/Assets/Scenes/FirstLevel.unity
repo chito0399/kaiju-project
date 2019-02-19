@@ -1043,6 +1043,8 @@ MonoBehaviour:
   jumpPower: 350
   grounded: 0
   numJumps: 0
+  curHealth: 0
+  maxHealth: 5
 --- !u!50 &19314320
 Rigidbody2D:
   serializedVersion: 4
@@ -52296,9 +52298,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -375, y: 334}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -286, y: 210}
+  m_SizeDelta: {x: 102.4, y: 29}
+  m_Pivot: {x: 0.42993414, y: 0.24489641}
 --- !u!114 &1517864394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56183,12 +56185,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HeartSprites:
-  - {fileID: 21300010, guid: 3b0071a5acd2440ecb35100b6fefdde9, type: 3}
-  - {fileID: 21300008, guid: 3b0071a5acd2440ecb35100b6fefdde9, type: 3}
-  - {fileID: 21300006, guid: 3b0071a5acd2440ecb35100b6fefdde9, type: 3}
-  - {fileID: 21300004, guid: 3b0071a5acd2440ecb35100b6fefdde9, type: 3}
-  - {fileID: 21300002, guid: 3b0071a5acd2440ecb35100b6fefdde9, type: 3}
-  - {fileID: 21300000, guid: 3b0071a5acd2440ecb35100b6fefdde9, type: 3}
+  - {fileID: 21300010, guid: 4dc3c2599bb9844b6a0d6fa72f16a1ff, type: 3}
+  - {fileID: 21300016, guid: 4dc3c2599bb9844b6a0d6fa72f16a1ff, type: 3}
+  - {fileID: 21300020, guid: 4dc3c2599bb9844b6a0d6fa72f16a1ff, type: 3}
+  - {fileID: 21300004, guid: 4dc3c2599bb9844b6a0d6fa72f16a1ff, type: 3}
+  - {fileID: 21300002, guid: 4dc3c2599bb9844b6a0d6fa72f16a1ff, type: 3}
+  - {fileID: 21300018, guid: 4dc3c2599bb9844b6a0d6fa72f16a1ff, type: 3}
   HeartUI: {fileID: 1517864394}
 --- !u!114 &1672671709
 MonoBehaviour:
