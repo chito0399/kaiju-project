@@ -91,4 +91,21 @@ public class Player : MonoBehaviour
     
     }
 
+   public void GetDamage(int dmg) {
+        curHealth -= dmg;
+        gameObject.GetComponent<Animation>().Play("Player_redFlash");
+
+    }
+
+    public IEnumerator KnockBack(float knockDur, float knockbackPwr, Vector3 knockbackDir) {
+        float timer = 0;
+        while (knockDur>timer) {
+            timer += Time.deltaTime;
+            rb2d.AddForce(new Vector3(knockbackDir.x * -100, knockbackDir.y*knockbackPwr, transform.position.z ));
+        }
+
+        yield return 0;
+        
+    }
+
 }
