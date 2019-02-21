@@ -23,7 +23,7 @@ TagManager:
   - Eenemies
   - Guns
   - Player
-  - 
+  - Walls
   - 
   - 
   - 
@@ -43,6 +43,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
+  - name: Walls
     uniqueID: 0
     locked: 0

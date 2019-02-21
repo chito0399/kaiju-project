@@ -13,6 +13,14 @@ public class Player : MonoBehaviour
     private Animator anim;
     public int numJumps = 0;
 
+    
+
+    //for Sliding
+    public bool wallSliding=false;
+    public Transform wallCheckPoint;
+    public bool wallCheck;
+    public LayerMask wallLayerMask;
+    public bool facingRight = true;
 
     public int curHealth;
     public int maxHealth=6;
@@ -34,12 +42,14 @@ public class Player : MonoBehaviour
 
         if (Input.GetAxis("Horizontal") < -0.1f) {
             transform.localScale = new Vector3(-1, 1, 1);
+            facingRight = false;
         }
         if (Input.GetAxis("Horizontal") > -0.1f)
         {
             transform.localScale = new Vector3(1, 1, 1);
+            facingRight = true;
         }
-        if (Input.GetButtonDown("Jump") && numJumps < 2) {
+        if (Input.GetButtonDown("Jump") && numJumps < 2 && !wallSliding) {
             rb2d.AddForce(Vector2.up * jumpPower);
             numJumps++;
         }
@@ -52,7 +62,35 @@ public class Player : MonoBehaviour
         if (curHealth<= 0) {
             Die();
         }
+        if (!grounded) {
+            wallCheck = Physics2D.OverlapCircle(wallCheckPoint.position, 0.1f, wallLayerMask);
+            if (facingRight && Input.GetAxis("Horizontal")>0.1f || !facingRight && Input.GetAxis("Horizontal") < 0.1f)
+            {
+                if (wallCheck) {
+                    HandleWallSliding();
+                }
+            }
 
+        }
+        if (!wallCheck || grounded) {
+            wallSliding = false;
+        }
+
+
+    }
+
+    void HandleWallSliding() {
+        rb2d.velocity = new Vector2(rb2d.velocity.x, -0.7f);
+        wallSliding = true;
+        if (Input.GetButtonDown("Jump"))
+        {
+            if (facingRight) {
+                rb2d.AddForce(new Vector2(-1, 2)*jumpPower);
+            }
+            else {
+                rb2d.AddForce(new Vector2(1, 2) * jumpPower);
+            }
+        }
 
     }
 
@@ -72,12 +110,18 @@ public class Player : MonoBehaviour
 
 
         //moving the player
+        if (grounded) {
+            rb2d.AddForce((Vector2.right * speed) * h);
 
-        rb2d.AddForce((Vector2.right*speed)*h);
+        }
+        else {
+            //for sliding
+            rb2d.AddForce((Vector2.right * speed/2) * h);
+        }
 
         //limitng speed of the player
 
-        if(rb2d.velocity.x>maxSpeed) {
+        if (rb2d.velocity.x>maxSpeed) {
             rb2d.velocity = new Vector2(maxSpeed, rb2d.velocity.y);
         }
         if (rb2d.velocity.x < -maxSpeed)
