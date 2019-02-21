@@ -27,13 +27,14 @@ public class Player : MonoBehaviour
 
     public int curHealth;
     public int maxHealth=6;
+    public float alan;
 
 
     void Start()
     {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
-
+        //transform.localScale = new Vector3(1, 1, 1);
         curHealth = maxHealth;
     }
 
@@ -44,29 +45,31 @@ public class Player : MonoBehaviour
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
 
         if (Input.GetAxis("Horizontal") < -0.0f) {
-            Debug.Log("Hola");
+            alan = Input.GetAxis("Horizontal");
             counterLeft++;
             counterRight = 0;
             checkStartPosition = true;
-            if (counterLeft==1)
+            if (counterLeft==5)
             {
                 transform.Rotate(0f, 180f, 0f);
+                //transform.localScale = new Vector3(-1, 1, 1);
             }
             //transform.localScale = new Vector3(-1, 1, 1);
-            //transform.Rotate(0f, 180f, 0f);
+           
 
             facingRight = false;
         }
         if (Input.GetAxis("Horizontal") > -0.0f)
         {
-            Debug.Log("adios");
+            alan = Input.GetAxis("Horizontal");
             counterRight++;
             counterLeft = 0;
-            if (counterRight==1 && checkStartPosition) { 
+            if (counterRight==5 && checkStartPosition) { 
                 transform.Rotate(0f, 180f, 0f);
+                //transform.localScale = new Vector3(1, 1, 1);
             }
             //transform.localScale = new Vector3(1, 1, 1);
-            //transform.Rotate(0f, 180f, 0f);
+
 
             facingRight = true;
 
@@ -87,12 +90,15 @@ public class Player : MonoBehaviour
 
         }
         if (!grounded) {
+            Debug.Log("Entra a !grounded");
             wallCheck = Physics2D.OverlapCircle(wallCheckPoint.position, 0.1f, wallLayerMask);
-
-            if (facingRight && Input.GetAxis("Horizontal")>0.1f || !facingRight && Input.GetAxis("Horizontal") < 0.1f)
+            Debug.Log("Este es el valor de wallcheck "+wallCheck);
+            if (facingRight && Input.GetAxis("Horizontal")>-0.0f || !facingRight && Input.GetAxis("Horizontal") < -0.0f)
             {
+                Debug.Log("qiubo perros");
                 if (wallCheck) {
                     HandleWallSliding();
+                    Debug.Log("mmmmm");
                 }
             }
 
@@ -105,10 +111,15 @@ public class Player : MonoBehaviour
     }
 
     void HandleWallSliding() {
-        rb2d.velocity = new Vector2(rb2d.velocity.x, -0.7f);
+        Debug.Log("Entra al handle method");
+        //rb2d.velocity = new Vector2(rb2d.velocity.x, -0.7f);
         wallSliding = true;
+        Debug.Log("Valor del wallsliding "+wallSliding);
+
         if (Input.GetButtonDown("Jump"))
         {
+            Debug.Log("Entra al if");
+
             if (facingRight) {
                 rb2d.AddForce(new Vector2(-1, 2)*jumpPower);
             }
@@ -176,9 +187,6 @@ public class Player : MonoBehaviour
         yield return 0;
         
     }
-    public void Flip() {
-        transform.Rotate(0f, 180f, 0f);
-
-    }
+    
 
 }
