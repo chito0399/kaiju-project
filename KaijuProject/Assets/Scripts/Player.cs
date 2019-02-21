@@ -12,6 +12,9 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb2d;
     private Animator anim;
     public int numJumps = 0;
+    public int counterRight = 0;
+    public int counterLeft = 0;
+    public bool checkStartPosition = false;
 
     
 
@@ -40,14 +43,33 @@ public class Player : MonoBehaviour
         anim.SetBool("Grounded", grounded);
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
 
-        if (Input.GetAxis("Horizontal") < -0.1f) {
-            transform.localScale = new Vector3(-1, 1, 1);
+        if (Input.GetAxis("Horizontal") < -0.0f) {
+            Debug.Log("Hola");
+            counterLeft++;
+            counterRight = 0;
+            checkStartPosition = true;
+            if (counterLeft==1)
+            {
+                transform.Rotate(0f, 180f, 0f);
+            }
+            //transform.localScale = new Vector3(-1, 1, 1);
+            //transform.Rotate(0f, 180f, 0f);
+
             facingRight = false;
         }
-        if (Input.GetAxis("Horizontal") > -0.1f)
+        if (Input.GetAxis("Horizontal") > -0.0f)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            Debug.Log("adios");
+            counterRight++;
+            counterLeft = 0;
+            if (counterRight==1 && checkStartPosition) { 
+                transform.Rotate(0f, 180f, 0f);
+            }
+            //transform.localScale = new Vector3(1, 1, 1);
+            //transform.Rotate(0f, 180f, 0f);
+
             facingRight = true;
+
         }
         if (Input.GetButtonDown("Jump") && numJumps < 2 && !wallSliding) {
             rb2d.AddForce(Vector2.up * jumpPower);
@@ -61,9 +83,12 @@ public class Player : MonoBehaviour
         }
         if (curHealth<= 0) {
             Die();
+
+
         }
         if (!grounded) {
             wallCheck = Physics2D.OverlapCircle(wallCheckPoint.position, 0.1f, wallLayerMask);
+
             if (facingRight && Input.GetAxis("Horizontal")>0.1f || !facingRight && Input.GetAxis("Horizontal") < 0.1f)
             {
                 if (wallCheck) {
@@ -150,6 +175,10 @@ public class Player : MonoBehaviour
 
         yield return 0;
         
+    }
+    public void Flip() {
+        transform.Rotate(0f, 180f, 0f);
+
     }
 
 }
