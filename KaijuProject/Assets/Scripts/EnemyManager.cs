@@ -18,6 +18,7 @@ public class EnemyManager : MonoBehaviour
         if (collision.tag == "Bullet" && health!=0)
         {
             health--;
+
         }
         else if (collision.tag == "Bullet" && health == 0)
         {
