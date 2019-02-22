@@ -10,6 +10,7 @@ TagManager:
   - ground
   - wall
   - Ballfire
+  - Bullet
   layers:
   - Default
   - TransparentFX
