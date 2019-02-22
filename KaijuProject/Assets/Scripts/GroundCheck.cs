@@ -18,7 +18,7 @@ public class GroundCheck : MonoBehaviour
 
         player.grounded = true;
         player.numJumps = 0;
-        Debug.Log("rererere");
+        //Debug.Log("rererere");
         //if (collision.CompareTag("fireball")) {
         //    player.grounded = false;
         //    Debug.Log("hfaiosjfpoa");

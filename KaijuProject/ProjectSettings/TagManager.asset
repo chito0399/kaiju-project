@@ -9,6 +9,7 @@ TagManager:
   - fireball
   - ground
   - wall
+  - Ballfire
   layers:
   - Default
   - TransparentFX

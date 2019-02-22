@@ -15,6 +15,8 @@ public class Fire : MonoBehaviour
     void Start()
     {
         inside = false;
+
+
     }
 
     // Update is called once per frame

@@ -17,7 +17,14 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     public  void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        if (collision.CompareTag("fireball")) {
+            Debug.Log("funciona");
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+       
     }
 
 }

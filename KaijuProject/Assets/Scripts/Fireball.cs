@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Fireball : MonoBehaviour
 {
-
+    public Player player;
     // Start is called before the first frame update
     void Start()
     {
-
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class Fireball : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            //Restar vidas al jugador
+            player.GetDamage(1);
         }
 
     }

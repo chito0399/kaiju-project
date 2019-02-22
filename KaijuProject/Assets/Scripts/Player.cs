@@ -90,15 +90,15 @@ public class Player : MonoBehaviour
 
         }
         if (!grounded) {
-            Debug.Log("Entra a !grounded");
+            //Debug.Log("Entra a !grounded");
             wallCheck = Physics2D.OverlapCircle(wallCheckPoint.position, 0.1f, wallLayerMask);
-            Debug.Log("Este es el valor de wallcheck "+wallCheck);
+            //Debug.Log("Este es el valor de wallcheck "+wallCheck);
             if (facingRight && Input.GetAxis("Horizontal")>-0.0f || !facingRight && Input.GetAxis("Horizontal") < -0.0f)
             {
-                Debug.Log("qiubo perros");
+
                 if (wallCheck) {
                     HandleWallSliding();
-                    Debug.Log("mmmmm");
+                    //Debug.Log("mmmmm");
                 }
             }
 
@@ -111,14 +111,14 @@ public class Player : MonoBehaviour
     }
 
     void HandleWallSliding() {
-        Debug.Log("Entra al handle method");
+        //Debug.Log("Entra al handle method");
         //rb2d.velocity = new Vector2(rb2d.velocity.x, -0.7f);
         wallSliding = true;
         Debug.Log("Valor del wallsliding "+wallSliding);
 
         if (Input.GetButtonDown("Jump"))
         {
-            Debug.Log("Entra al if");
+            //Debug.Log("Entra al if");
 
             if (facingRight) {
                 rb2d.AddForce(new Vector2(-1, 2)*jumpPower);
