@@ -1,0 +1,646 @@
+fileFormatVersion: 2
+guid: ec6d3b849b719eb42ad6e9ea305b167b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Transparent_Flames_Set_PNG_Clipart_0
+    21300002: Transparent_Flames_Set_PNG_Clipart_1
+    21300004: Transparent_Flames_Set_PNG_Clipart_2
+    21300006: Transparent_Flames_Set_PNG_Clipart_3
+    21300008: Transparent_Flames_Set_PNG_Clipart_4
+    21300010: Transparent_Flames_Set_PNG_Clipart_5
+    21300012: Transparent_Flames_Set_PNG_Clipart_6
+    21300014: Transparent_Flames_Set_PNG_Clipart_7
+    21300016: Transparent_Flames_Set_PNG_Clipart_8
+    21300018: Transparent_Flames_Set_PNG_Clipart_9
+    21300020: Transparent_Flames_Set_PNG_Clipart_10
+    21300022: Transparent_Flames_Set_PNG_Clipart_11
+    21300024: Transparent_Flames_Set_PNG_Clipart_12
+    21300026: Transparent_Flames_Set_PNG_Clipart_13
+    21300028: Transparent_Flames_Set_PNG_Clipart_14
+    21300030: Transparent_Flames_Set_PNG_Clipart_15
+    21300032: Transparent_Flames_Set_PNG_Clipart_16
+    21300034: Transparent_Flames_Set_PNG_Clipart_17
+    21300036: Transparent_Flames_Set_PNG_Clipart_18
+    21300038: Transparent_Flames_Set_PNG_Clipart_19
+    21300040: Transparent_Flames_Set_PNG_Clipart_20
+    21300042: Transparent_Flames_Set_PNG_Clipart_21
+    21300044: Transparent_Flames_Set_PNG_Clipart_22
+    21300046: Transparent_Flames_Set_PNG_Clipart_23
+    21300048: Transparent_Flames_Set_PNG_Clipart_24
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_0
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1841
+        width: 414
+        height: 716
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69541586d8fc8c841a87a0bb07ee2e14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_1
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 2291
+        width: 44
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6624555538527214691f6af0530556f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_2
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 2195
+        width: 73
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c207bfda6d8f75d49893225e518b33ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_3
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 1882
+        width: 398
+        height: 729
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e4c66a637d9954b9597e1990fa86ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_4
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 2252
+        width: 58
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998ed22ea7d80aa48871df345e97d473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_5
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 2255
+        width: 88
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd48c4e7ff715f488c0ab001649f8bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_6
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 1834
+        width: 584
+        height: 777
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3305f40eb2f922b4991145675015e291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_7
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 2389
+        width: 43
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307973ac71f70534f9f7a02bcdeb5055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_8
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 1825
+        width: 647
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c078844c5be4672409b488e91295e76f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_9
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 2308
+        width: 55
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c662f86a47be14e9092c4b72bc05fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_10
+      rect:
+        serializedVersion: 2
+        x: 2217
+        y: 2198
+        width: 81
+        height: 409
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5a9d9092b803148bb345b12be495e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_11
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1003
+        width: 462
+        height: 739
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc995066b8f76da42b064ab35b334adc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_12
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 957
+        width: 454
+        height: 754
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20025ff09f299fc4d9cf4a48c281c72d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_13
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1407
+        width: 51
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a2a11defc4795459e05d6eb483b4b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_14
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 918
+        width: 547
+        height: 847
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83489e38eca96084080d98af174ea4fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_15
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1516
+        width: 50
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b637ad38f6ad4b4b85e65b508e90556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_16
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 1018
+        width: 493
+        height: 691
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a5ce3290408794cb64141049a46206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_17
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 136
+        width: 444
+        height: 722
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a32f75c0cc22143a26145dbcda7ce2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_18
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 102
+        width: 394
+        height: 770
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04043a00df414f64999480b18eae54a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_19
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 621
+        width: 48
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03792104f613bf74387ac14698d716e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_20
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 101
+        width: 494
+        height: 806
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7b62049d4ae494badc49c5a02ded14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_21
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 605
+        width: 64
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c860aeca28a5c94281645c55162639e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_22
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 143
+        width: 425
+        height: 724
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5b6e2efb2c46d40af1115105d44fbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_23
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 529
+        width: 51
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1808e5dc2061c5f41bb5ce55c4e7838c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transparent_Flames_Set_PNG_Clipart_24
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1667
+        width: 93
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992152ee0a3458a4dba352fec97ff8da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: dd4df988d48c178429d78f836a1fb145
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
