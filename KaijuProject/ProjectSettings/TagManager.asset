@@ -3,18 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
-  tags: []
-=======
   tags:
-  - Key
-  - Power
-  - fireball
-  - ground
-  - wall
   - Ballfire
   - Bullet
->>>>>>> corregir2
   layers:
   - Default
   - TransparentFX
@@ -24,12 +15,12 @@ TagManager:
   - UI
   - 
   - 
-  - BackGround
-  - Platforms
-  - Eenemies
-  - Guns
-  - Player
-  - Walls
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -49,6 +40,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Walls
+  - name: Default
     uniqueID: 0
     locked: 0
