@@ -15,6 +15,8 @@ public class Fire : MonoBehaviour
     void Start()
     {
         inside = false;
+
+
     }
 
     // Update is called once per frame
@@ -27,7 +29,7 @@ public class Fire : MonoBehaviour
     {
         if (inside)
         {
-            Debug.Log("fireball");
+            //Debug.Log("fireball");
             yield return new WaitForSeconds(timeFire);
             Transform ball = Instantiate(fireball, transform.position, transform.rotation);
             Destroy(ball.gameObject, timeDestroy);

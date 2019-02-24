@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Key
-  - Power
+  - Ballfire
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -15,11 +15,11 @@ TagManager:
   - UI
   - 
   - 
-  - BackGround
-  - Platforms
-  - Eenemies
-  - Guns
-  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
