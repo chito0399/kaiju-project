@@ -1,36 +1,47 @@
-﻿//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
-
-//public class Slot : MonoBehaviour
-//{
+﻿
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 
-//    private Inventory inventory;
-//    public int index;
 
-//    private void Start()
-//    {
+public class Slot : MonoBehaviour
+{
+        private Inventory inventory;
+        public int i;
 
-//        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
-//    }
+        private void Start()
+        {
 
-//    private void Update()
-//    {
-//        if (transform.childCount <= 0)
-//        {
-//            inventory.items[index] = 0;
-//        }
-//    }
+            inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        }
 
-//    public void Cross()
-//    {
+        private void Update()
+        {
+            if (transform.childCount <= 0)
+            {
+            inventory.isFull[i] = false;
+            }
+        }
 
-//        foreach (Transform child in transform)
-//        {
-//            child.GetComponent<Spawn>().SpawnItem();
-//            GameObject.Destroy(child.gameObject);
-//        }
-//    }
+    public void DropItem() {
+        foreach (Transform child in transform)
+            {
+                child.GetComponent<Spawn>().SpawnItem();
+                GameObject.Destroy(child.gameObject);
+            }
+    }
 
-//}
+   
+
+    //    public void DropItem()
+    //    {
+
+    //        foreach (Transform child in transform)
+    //        {
+    //            child.GetComponent<Spawn>().SpawnItem();
+    //            GameObject.Destroy(child.gameObject);
+    //        }
+    //    }
+
+}
