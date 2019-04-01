@@ -8,6 +8,8 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public GameObject bullet2Prefab;
+    public bool power2 = false;
+    public int countShots2 = 8;
     
 
 
@@ -20,10 +22,16 @@ public class Weapon : MonoBehaviour
             
         }
     }
-    void Shoot() {
-        //if (power2) { 
-        
-        //}
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+    void Shoot()
+    {
+        if (power2 && countShots2>=0)
+        {
+            Instantiate(bullet2Prefab, firePoint.position, firePoint.rotation);
+            countShots2--;
+        }
+        else
+        {
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        }
     }
 }

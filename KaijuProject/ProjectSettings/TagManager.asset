@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - fireball
   - Key
+  - Bullet2
   layers:
   - Default
   - TransparentFX
