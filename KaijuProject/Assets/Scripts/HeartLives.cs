@@ -13,6 +13,7 @@ public class HeartLives : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+
     }
     private void Update()
     {

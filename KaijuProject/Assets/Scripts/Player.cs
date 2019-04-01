@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     public bool facingRight = true;
 
     public int curHealth;
-    public int maxHealth=6;
+    public int maxHealth=5;
     public float alan;
 
 
