@@ -23,14 +23,12 @@ public class EnemyFollow : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.tag == "Player" )
-        {
+        if (collision.gameObject.CompareTag("Player") ) {
+            Debug.Log("MaMAmarrano");
             inside = true;
-
         }
-
     }
 
 

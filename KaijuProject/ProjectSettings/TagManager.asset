@@ -12,6 +12,7 @@ TagManager:
   - Kaiju
   - Wall
   - Floor
+  - EnemyPrincipal
   layers:
   - Default
   - TransparentFX

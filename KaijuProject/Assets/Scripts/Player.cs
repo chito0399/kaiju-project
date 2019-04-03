@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     public int counterRight = 0;
     public int counterLeft = 0;
     public bool checkStartPosition = false;
-
+    private EnemyFollow enemyFollow;
     
 
     //for Sliding
@@ -36,6 +36,7 @@ public class Player : MonoBehaviour
         anim = gameObject.GetComponent<Animator>();
         //transform.localScale = new Vector3(1, 1, 1);
         curHealth = maxHealth;
+        enemyFollow= GameObject.FindGameObjectWithTag("EnemyPrincipal").GetComponent<EnemyFollow>();
     }
 
     // Update is called once per frame
@@ -192,6 +193,11 @@ public class Player : MonoBehaviour
         yield return 0;
         
     }
-    
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if()
+    //}
+
 
 }

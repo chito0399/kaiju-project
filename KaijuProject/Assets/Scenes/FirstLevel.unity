@@ -40439,7 +40439,7 @@ GameObject:
   - component: {fileID: 961183733}
   m_Layer: 0
   m_Name: EnemyPrincipal
-  m_TagString: Untagged
+  m_TagString: EnemyPrincipal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
