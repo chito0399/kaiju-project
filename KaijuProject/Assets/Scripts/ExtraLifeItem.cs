@@ -13,7 +13,13 @@ public class ExtraLifeItem : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         protagonist = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
+    public void Update()
+    {
 
+        if (Input.GetButtonDown("Fire2")) {
+            Debug.Log("alansa");
+        }
+    }
     // Update is called once per frame
     public void Use()
     {

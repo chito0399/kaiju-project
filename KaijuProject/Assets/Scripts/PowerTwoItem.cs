@@ -17,6 +17,10 @@ public class PowerTwoItem : MonoBehaviour
 
     }
 
+    //public void Update() { 
+
+    //}
+
     // Update is called once per frame
     public void Use() {
         weapon.power2 = true;

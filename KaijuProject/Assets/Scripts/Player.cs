@@ -41,6 +41,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //cambiar los poderes con una tecla en lugar del mouse
+        //if (Input.GetButtonDown("Fire2"))
+        //{
+
+        //}
         anim.SetBool("Grounded", grounded);
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
 

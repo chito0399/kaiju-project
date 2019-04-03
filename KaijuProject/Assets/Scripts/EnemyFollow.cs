@@ -11,6 +11,7 @@ public class EnemyFollow : MonoBehaviour
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        Debug.Log("rarsafas");
     }
 
     // Update is called once per frame
@@ -24,10 +25,14 @@ public class EnemyFollow : MonoBehaviour
 
 
    
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.tag=="Player") {
+        Debug.Log("sabrosongo");
+
+        Debug.Log(other.tag);
+        if (other.tag=="Player") {
             inside = true;
+
         }
     }
 

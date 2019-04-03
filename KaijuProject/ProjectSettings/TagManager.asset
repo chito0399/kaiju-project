@@ -9,6 +9,9 @@ TagManager:
   - fireball
   - Key
   - Bullet2
+  - Kaiju
+  - Wall
+  - Floor
   layers:
   - Default
   - TransparentFX
