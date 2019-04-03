@@ -21,7 +21,7 @@ public class EnemyManager : MonoBehaviour
 
         }
         else if (collision.tag == "Bullet2" && health > 0) {
-            health -= 2;
+            health -= 5;
         }
         else if ((collision.tag == "Bullet" || collision.tag == "Bullet2") && health <= 0)
         {

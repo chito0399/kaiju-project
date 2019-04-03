@@ -23,18 +23,17 @@ public class EnemyFollow : MonoBehaviour
         }
     }
 
-
-   
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("sabrosongo");
-
-        Debug.Log(other.tag);
-        if (other.tag=="Player") {
+        if (collision.tag == "Player" )
+        {
             inside = true;
 
         }
+
     }
+
+
 
 
 }
