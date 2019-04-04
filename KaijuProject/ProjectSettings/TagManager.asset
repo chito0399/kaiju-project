@@ -13,6 +13,7 @@ TagManager:
   - Wall
   - Floor
   - EnemyPrincipal
+  - Fire
   layers:
   - Default
   - TransparentFX
