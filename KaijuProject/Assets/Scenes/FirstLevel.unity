@@ -1360,7 +1360,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19314316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 205, y: 23.4, z: 0}
+  m_LocalPosition: {x: 93.9, y: -229.6, z: 0}
   m_LocalScale: {x: 1.776, y: 1.776, z: 1.776}
   m_Children:
   - {fileID: 1480222313}
@@ -25800,7 +25800,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605315941}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.57, y: 1.04, z: 0}
+  m_LocalPosition: {x: -3.838, y: 1.221, z: 0}
   m_LocalScale: {x: 1.3333334, y: 1.3333334, z: 1.6161598}
   m_Children: []
   m_Father: {fileID: 1580373923}
@@ -40487,7 +40487,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.011068776, y: -0.024967313}
@@ -65022,7 +65022,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1580373923}
   - component: {fileID: 1580373929}
-  - component: {fileID: 1580373928}
   - component: {fileID: 1580373927}
   - component: {fileID: 1580373926}
   - component: {fileID: 1580373925}
@@ -65126,27 +65125,6 @@ MonoBehaviour:
   speed: 10
   startP: {fileID: 1751015950}
   endP: {fileID: 504525925}
---- !u!50 &1580373928
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580373922}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &1580373929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67756,7 +67734,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 30.824112
+  orthographic size: 156.46407
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
