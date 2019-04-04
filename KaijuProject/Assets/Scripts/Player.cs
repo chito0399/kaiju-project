@@ -82,6 +82,7 @@ public class Player : MonoBehaviour
         }
         if (Input.GetButtonDown("Jump") && numJumps < 2 && !wallSliding) {
             rb2d.AddForce(Vector2.up * jumpPower);
+            FindObjectOfType<AudioManager>().Play("jump");
             numJumps++;
         }
 
