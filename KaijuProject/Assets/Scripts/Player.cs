@@ -195,10 +195,21 @@ public class Player : MonoBehaviour
         
     }
 
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if()
-    //}
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Fire"))
+        {
+            FindObjectOfType<AudioManager>().Play("Fuego");
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Fire"))
+        {
+            FindObjectOfType<AudioManager>().Stop("Fuego");
+        }
+    }
 
 
 }
