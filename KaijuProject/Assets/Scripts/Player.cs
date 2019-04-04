@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     public float maxSpeed = 20;
     public float speed = 25f;
-    public float jumpPower = 250f;
+    public float jumpPower = 230f;
     public bool grounded;
     private Rigidbody2D rb2d;
     private Animator anim;
@@ -16,7 +16,8 @@ public class Player : MonoBehaviour
     public int counterLeft = 0;
     public bool checkStartPosition = false;
     private EnemyFollow enemyFollow;
-    
+
+    private Kaijuu kaiju;
 
     //for Sliding
     public bool wallSliding=false;
@@ -37,6 +38,7 @@ public class Player : MonoBehaviour
         //transform.localScale = new Vector3(1, 1, 1);
         curHealth = maxHealth;
         enemyFollow= GameObject.FindGameObjectWithTag("EnemyPrincipal").GetComponent<EnemyFollow>();
+        kaiju= GameObject.FindGameObjectWithTag("Kaiju").GetComponent<Kaijuu>();
     }
 
     // Update is called once per frame
@@ -200,6 +202,11 @@ public class Player : MonoBehaviour
         if(other.gameObject.CompareTag("Fire"))
         {
             FindObjectOfType<AudioManager>().Play("Fuego");
+        }
+        if (other.gameObject.CompareTag("SpecialFloor")) {
+            kaiju.startShooting = true;
+
+        
         }
     }
 

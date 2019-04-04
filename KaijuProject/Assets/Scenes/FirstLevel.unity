@@ -1360,7 +1360,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19314316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.7, y: 40.3, z: 0}
+  m_LocalPosition: {x: 226.4, y: 16.3, z: 0}
   m_LocalScale: {x: 1.776, y: 1.776, z: 1.776}
   m_Children:
   - {fileID: 1480222313}
@@ -3217,6 +3217,7 @@ MonoBehaviour:
   retreatDistance: 10
   firePoint: {fileID: 0}
   startTimeBtwShots: 3
+  startShooting: 0
   projectile: {fileID: 5242820799815408059, guid: e250e28119da44a6d93c27b08055f094,
     type: 3}
 --- !u!50 &62339588
@@ -5366,7 +5367,7 @@ GameObject:
   - component: {fileID: 115658192}
   m_Layer: 0
   m_Name: floor (196)
-  m_TagString: Floor
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11258,7 +11259,7 @@ GameObject:
   - component: {fileID: 261621204}
   m_Layer: 0
   m_Name: floor (197)
-  m_TagString: Floor
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17647,7 +17648,7 @@ GameObject:
   - component: {fileID: 407280318}
   m_Layer: 0
   m_Name: floor (188)
-  m_TagString: Floor
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20369,7 +20370,7 @@ GameObject:
   - component: {fileID: 465809301}
   m_Layer: 0
   m_Name: floor (192)
-  m_TagString: Floor
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26778,6 +26779,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf239bd8b3e51a4e94343323e6c8c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  izquierda: {fileID: 0}
+  derecha: {fileID: 0}
+  enemy: {fileID: 0}
   fall: 1
 --- !u!1 &627013023
 GameObject:
@@ -37513,6 +37517,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf239bd8b3e51a4e94343323e6c8c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  izquierda: {fileID: 0}
+  derecha: {fileID: 0}
+  enemy: {fileID: 0}
   fall: 1
 --- !u!1 &874536492
 GameObject:
@@ -37527,7 +37534,7 @@ GameObject:
   - component: {fileID: 874536494}
   m_Layer: 0
   m_Name: floor (200)
-  m_TagString: Floor
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40803,7 +40810,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.011068776, y: -0.024967313}
@@ -57317,7 +57324,7 @@ GameObject:
   - component: {fileID: 1376058623}
   m_Layer: 0
   m_Name: floor (189)
-  m_TagString: Floor
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62784,7 +62791,7 @@ GameObject:
   - component: {fileID: 1508060522}
   m_Layer: 0
   m_Name: floor (191)
-  m_TagString: Floor
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63789,7 +63796,7 @@ GameObject:
   - component: {fileID: 1547026765}
   m_Layer: 0
   m_Name: floor (198)
-  m_TagString: Floor
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65715,6 +65722,7 @@ MonoBehaviour:
   retreatDistance: 0
   firePoint: {fileID: 605315942}
   startTimeBtwShots: 3
+  startShooting: 0
   projectile: {fileID: 5242820799815408059, guid: e250e28119da44a6d93c27b08055f094,
     type: 3}
 --- !u!60 &1580373931
@@ -68258,7 +68266,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 156.46407
+  orthographic size: 134.22636
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -72809,7 +72817,7 @@ GameObject:
   - component: {fileID: 1785682241}
   m_Layer: 0
   m_Name: floor (193)
-  m_TagString: Floor
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72914,7 +72922,7 @@ GameObject:
   - component: {fileID: 1789592877}
   m_Layer: 0
   m_Name: BG
-  m_TagString: Untagged
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73378,7 +73386,7 @@ GameObject:
   - component: {fileID: 1811858885}
   m_Layer: 0
   m_Name: floor (199)
-  m_TagString: Floor
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73691,7 +73699,7 @@ GameObject:
   - component: {fileID: 1815501508}
   m_Layer: 0
   m_Name: floor (194)
-  m_TagString: Floor
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77849,7 +77857,7 @@ GameObject:
   - component: {fileID: 1927744996}
   m_Layer: 0
   m_Name: floor (190)
-  m_TagString: Floor
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77955,7 +77963,7 @@ GameObject:
   - component: {fileID: 1931919972}
   m_Layer: 0
   m_Name: floor (195)
-  m_TagString: Floor
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78810,7 +78818,7 @@ GameObject:
   - component: {fileID: 1969348588}
   m_Layer: 0
   m_Name: floor (201)
-  m_TagString: Floor
+  m_TagString: SpecialFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

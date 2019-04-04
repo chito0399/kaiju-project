@@ -11,6 +11,7 @@ public class Kaijuu : MonoBehaviour
     public Transform firePoint;
     private float timeBtwShots;
     public float startTimeBtwShots;
+    public bool startShooting = false;
 
     public GameObject projectile;
     private Transform player;
@@ -33,7 +34,7 @@ public class Kaijuu : MonoBehaviour
         //    transform.position = Vector2.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
         //}
 
-        if (timeBtwShots <= 0) {
+        if (timeBtwShots <= 0 && startShooting ) {
             Instantiate(projectile, firePoint.position, Quaternion.identity);
             timeBtwShots = startTimeBtwShots; 
         }
