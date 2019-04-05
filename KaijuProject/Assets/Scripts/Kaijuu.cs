@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Kaijuu : MonoBehaviour
 {
-    public float live = 100;
+    public float live = 50;
     public float speed;
     public float stoppingDistance;
     public float retreatDistance;

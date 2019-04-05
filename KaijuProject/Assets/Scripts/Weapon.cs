@@ -9,7 +9,7 @@ public class Weapon : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject bullet2Prefab;
     public bool power2 = false;
-    public int countShots2 = 8;
+    public int countShots2 = 10;
     
 
 
