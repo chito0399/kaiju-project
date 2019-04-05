@@ -65947,7 +65947,7 @@ MonoBehaviour:
   stoppingDistance: 0
   retreatDistance: 0
   firePoint: {fileID: 605315942}
-  startTimeBtwShots: 3
+  startTimeBtwShots: 5
   startShooting: 0
   projectile: {fileID: 5242820799815408059, guid: e250e28119da44a6d93c27b08055f094,
     type: 3}
