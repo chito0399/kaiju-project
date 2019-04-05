@@ -17,12 +17,15 @@ public class Compuertas : MonoBehaviour
     
     public float fall = 1f;       //Tiempo en responder a la caída
     int enemyHealth;
+    private bool verifyHealt = false;
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
         enemyHealth = enemy.gameObject.GetComponent<EnemyManager>().health;
+        enemy = GameObject.FindGameObjectWithTag("EnemyCompuertas").GetComponent<EnemyManager>();
         start_izq = izquierda.transform.position;
         start_der = derecha.transform.position;
 
@@ -32,14 +35,17 @@ public class Compuertas : MonoBehaviour
 
     void Update()
     {
-        
-        if (enemyHealth <= 0)
+        //enemyHealth = enemy.gameObject.GetComponent<EnemyManager>().health;
+
+
+        if (enemy.health <= 0  )
         {
-            rb_izq.transform.position = start_izq;
-            rb_der.transform.position = start_der;
+            izquierda.transform.position = start_izq;
+            derecha.transform.position = start_der;
 
             rb_der.gravityScale = 0f;
             rb_izq.gravityScale = 0f;
+            //verifyHealt = false;
 
         }
     }

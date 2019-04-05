@@ -18,10 +18,12 @@ public class EnemyManager : MonoBehaviour
         if (collision.tag == "Bullet" && health > 0)
         {
             health--;
+            Debug.Log("JIMENENE");
 
         }
-        else if (collision.tag == "Bullet2" && health > 0) {
+        else if (collision.tag == "Bullet2" && health >0) {
             health -= 5;
+
         }
         else if ((collision.tag == "Bullet" || collision.tag == "Bullet2") && health <= 0)
         {

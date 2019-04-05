@@ -54847,7 +54847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1238776522}
   m_Layer: 0
-  m_Name: Enemy_Opt (1)
+  m_Name: EnemyCompuertas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81475,7 +81475,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967484386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.03, y: 11.11, z: -0.00000017881}
+  m_LocalPosition: {x: 26.4, y: 11.11, z: -0.00000017881}
   m_LocalScale: {x: 17.03793, y: 230.23589, z: 24.73208}
   m_Children: []
   m_Father: {fileID: 872149256}
