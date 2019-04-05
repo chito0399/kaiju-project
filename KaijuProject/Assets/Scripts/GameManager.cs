@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public EnemyManager kaiju;
     private int lifeKaiju;
     private bool lost;
+    public Player player;
 
     // Start is called before the first frame update
     void Start()
@@ -44,8 +45,7 @@ public class GameManager : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("PERDIMOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOS");
-            FinishGame();
+            player.GetDamage(5);
         }
     }
 }
