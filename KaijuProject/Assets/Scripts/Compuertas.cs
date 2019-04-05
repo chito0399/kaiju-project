@@ -17,7 +17,7 @@ public class Compuertas : MonoBehaviour
     
     public float fall = 1f;       //Tiempo en responder a la caída
     int enemyHealth;
-    private bool verifyHealt = false;
+    private bool verifyFall = false;
     
 
 
@@ -38,7 +38,7 @@ public class Compuertas : MonoBehaviour
         //enemyHealth = enemy.gameObject.GetComponent<EnemyManager>().health;
 
 
-        if (enemy.health <= 0  )
+        if (enemy.health <= 0 )
         {
             izquierda.transform.position = start_izq;
             derecha.transform.position = start_der;
@@ -55,6 +55,7 @@ public class Compuertas : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Invoke("Fall", fall);
+           
         }
     }
     

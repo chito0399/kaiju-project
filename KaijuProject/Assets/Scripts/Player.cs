@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
         anim = gameObject.GetComponent<Animator>();
         //transform.localScale = new Vector3(1, 1, 1);
         curHealth = maxHealth;
-        enemyFollow= GameObject.FindGameObjectWithTag("EnemyPrincipal").GetComponent<EnemyFollow>();
+//        enemyFollow= GameObject.FindGameObjectWithTag("EnemyPrincipal").GetComponent<EnemyFollow>();
         kaiju= GameObject.FindGameObjectWithTag("Kaiju").GetComponent<Kaijuu>();
     }
 
@@ -123,7 +123,7 @@ public class Player : MonoBehaviour
         //Debug.Log("Entra al handle method");
         //rb2d.velocity = new Vector2(rb2d.velocity.x, -0.7f);
         wallSliding = true;
-        Debug.Log("Valor del wallsliding "+wallSliding);
+//        Debug.Log("Valor del wallsliding "+wallSliding);
 
         if (Input.GetButtonDown("Jump"))
         {

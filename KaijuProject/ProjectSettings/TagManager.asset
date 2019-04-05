@@ -15,6 +15,7 @@ TagManager:
   - EnemyPrincipal
   - Fire
   - SpecialFloor
+  - EnemyCompuertas
   layers:
   - Default
   - TransparentFX
