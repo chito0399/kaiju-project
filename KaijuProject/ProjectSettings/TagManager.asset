@@ -6,6 +6,15 @@ TagManager:
   tags:
   - Ballfire
   - Bullet
+  - fireball
+  - Key
+  - Bullet2
+  - Kaiju
+  - Wall
+  - Floor
+  - EnemyPrincipal
+  - Fire
+  - SpecialFloor
   layers:
   - Default
   - TransparentFX
@@ -40,6 +49,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 448960003
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

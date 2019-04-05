@@ -27,6 +27,7 @@ public class Blocks : MonoBehaviour
         {
             if (used)
             {
+                Debug.Log("Sale poder");
                 Transform power = Instantiate(newPower, positionPower.transform.position, positionPower.transform.rotation);
                 used = !used;
             }

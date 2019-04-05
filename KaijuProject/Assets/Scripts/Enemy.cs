@@ -30,7 +30,8 @@ public class Enemy : MonoBehaviour
             if (transform.position == endP.transform.position)
             {
                 rightSide = true;
-                GetComponent<SpriteRenderer>().flipX = true;
+                //GetComponent<SpriteRenderer>().flipX = true;
+                transform.Rotate(0f, 180f, 0f);
             }
 
         }
@@ -40,7 +41,8 @@ public class Enemy : MonoBehaviour
             if (transform.position == startP.transform.position)
             {
                 rightSide = false;
-                GetComponent<SpriteRenderer>().flipX = false;
+                //GetComponent<SpriteRenderer>().flipX = false;
+                transform.Rotate(0f, 180f, 0f);
             }
 
         }

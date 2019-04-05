@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     public float maxSpeed = 20;
     public float speed = 25f;
-    public float jumpPower = 250f;
+    public float jumpPower = 230f;
     public bool grounded;
     private Rigidbody2D rb2d;
     private Animator anim;
@@ -15,8 +15,9 @@ public class Player : MonoBehaviour
     public int counterRight = 0;
     public int counterLeft = 0;
     public bool checkStartPosition = false;
+    private EnemyFollow enemyFollow;
 
-    
+    private Kaijuu kaiju;
 
     //for Sliding
     public bool wallSliding=false;
@@ -26,7 +27,7 @@ public class Player : MonoBehaviour
     public bool facingRight = true;
 
     public int curHealth;
-    public int maxHealth=6;
+    public int maxHealth=5;
     public float alan;
 
 
@@ -36,11 +37,18 @@ public class Player : MonoBehaviour
         anim = gameObject.GetComponent<Animator>();
         //transform.localScale = new Vector3(1, 1, 1);
         curHealth = maxHealth;
+        enemyFollow= GameObject.FindGameObjectWithTag("EnemyPrincipal").GetComponent<EnemyFollow>();
+        kaiju= GameObject.FindGameObjectWithTag("Kaiju").GetComponent<Kaijuu>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //cambiar los poderes con una tecla en lugar del mouse
+        //if (Input.GetButtonDown("Fire2"))
+        //{
+
+        //}
         anim.SetBool("Grounded", grounded);
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
 
@@ -76,6 +84,7 @@ public class Player : MonoBehaviour
         }
         if (Input.GetButtonDown("Jump") && numJumps < 2 && !wallSliding) {
             rb2d.AddForce(Vector2.up * jumpPower);
+            FindObjectOfType<AudioManager>().Play("jump");
             numJumps++;
         }
 
@@ -187,6 +196,27 @@ public class Player : MonoBehaviour
         yield return 0;
         
     }
-    
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Fire"))
+        {
+            FindObjectOfType<AudioManager>().Play("Fuego");
+        }
+        if (other.gameObject.CompareTag("SpecialFloor")) {
+            kaiju.startShooting = true;
+
+        
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Fire"))
+        {
+            FindObjectOfType<AudioManager>().Stop("Fuego");
+        }
+    }
+
 
 }
