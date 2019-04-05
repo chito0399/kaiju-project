@@ -16,11 +16,13 @@ public class Compuertas : MonoBehaviour
     private Rigidbody2D rb_der;        //RigidBody de la plataforma
     
     public float fall = 1f;       //Tiempo en responder a la caída
+    int enemyHealth;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        enemyHealth = enemy.gameObject.GetComponent<EnemyManager>().health;
         start_izq = izquierda.transform.position;
         start_der = derecha.transform.position;
 
@@ -30,7 +32,7 @@ public class Compuertas : MonoBehaviour
 
     void Update()
     {
-        int enemyHealth = enemy.gameObject.GetComponent<EnemyManager>().health;
+        
         if (enemyHealth <= 0)
         {
             rb_izq.transform.position = start_izq;
