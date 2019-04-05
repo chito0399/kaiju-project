@@ -16,20 +16,21 @@ public class CannonBullet : MonoBehaviour
     public void Update()
     {
         gameObject.transform.Translate(new Vector3(0, 1f, 0));
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+        Debug.Log("MAMAmarrano");
         if (collision.gameObject.CompareTag("Player"))
         {
-            player.GetDamage(damage);
+            player.GetDamage(1);
             Debug.Log("el cannon le dio al player");
+           
         }
-        else
-        {
-            Destroy(gameObject);
-        }
-        
+        Destroy(gameObject);
+
 
     }
 

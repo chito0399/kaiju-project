@@ -48,9 +48,9 @@ public class Cannon : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        inside = false;
-        StopCoroutine(Shoot());
-    }
+    //void OnTriggerExit2D(Collider2D other)
+    //{
+    //    inside = false;
+    //    StopCoroutine(Shoot());
+    //}
 }
