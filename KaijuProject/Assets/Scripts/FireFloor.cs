@@ -18,7 +18,7 @@ public class FireFloor : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            player.GetDamage(1);
+            player.GetDamage(5);
         }
 
     }

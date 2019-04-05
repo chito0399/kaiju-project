@@ -1759,7 +1759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &23156477
 Rigidbody2D:
@@ -19648,7 +19648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &440144379
 Rigidbody2D:
@@ -22114,7 +22114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &488040972
 Rigidbody2D:
@@ -29504,7 +29504,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!60 &650976229
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -33570,7 +33570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &734539805
 Rigidbody2D:
@@ -33791,7 +33791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &740946840
 Rigidbody2D:
@@ -34791,7 +34791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &773829436
 Rigidbody2D:
@@ -35258,7 +35258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &784713633
 Rigidbody2D:
@@ -36326,7 +36326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &801214556
 Rigidbody2D:
@@ -52442,7 +52442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &1180418131
 Rigidbody2D:
@@ -53069,7 +53069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &1197705598
 Rigidbody2D:
@@ -58232,7 +58232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDestroy: 2
-  timeFire: 1.5
+  timeFire: 2
   cannonBall: {fileID: 5524133519876171635, guid: 9021112781d7d484d96a45b6dbaf7245,
     type: 3}
   position: {fileID: 223626824}
@@ -58284,7 +58284,7 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_AutoTiling: 1
   serializedVersion: 2
   m_Size: {x: 49.481304, y: 165.54022}
   m_EdgeRadius: 0
@@ -59087,7 +59087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &1356579710
 Rigidbody2D:
@@ -61152,7 +61152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &1413092331
 Rigidbody2D:
@@ -64903,7 +64903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &1491335777
 Rigidbody2D:
@@ -72170,7 +72170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &1689711147
 Rigidbody2D:
@@ -72285,7 +72285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &1691067007
 Rigidbody2D:
@@ -73274,7 +73274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &1729138720
 Rigidbody2D:
@@ -78712,7 +78712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &1863788406
 Rigidbody2D:
@@ -79060,7 +79060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &1873412061
 Rigidbody2D:
@@ -88448,7 +88448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1984c81178f61443bc470406f109ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fall: 1
+  fall: 0.7
   respawn: 5
 --- !u!50 &2138442294
 Rigidbody2D:
