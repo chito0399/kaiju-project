@@ -15,6 +15,8 @@ public class Kaijuu : MonoBehaviour
 
     public GameObject projectile;
     private Transform player;
+
+    public GameManager gm;
     // Start is called before the first frame update
     void Start()
     {

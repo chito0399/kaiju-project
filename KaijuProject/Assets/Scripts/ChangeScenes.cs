@@ -16,6 +16,7 @@ public class ChangeScenes : MonoBehaviour
 
     public void FirstLevel()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("FirstLevel");
     }
 
@@ -23,6 +24,12 @@ public class ChangeScenes : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
+    }
+
+    public void SecondLevel()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("SecondLevel");
     }
 
 }
