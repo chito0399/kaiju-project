@@ -159,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerX: {fileID: 1443736956}
   player: {fileID: 0}
-  healthy: 0
+  healthy: 1
 --- !u!61 &24537885
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6069,7 +6069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerX: {fileID: 1443736956}
   player: {fileID: 0}
-  healthy: 0
+  healthy: 1
 --- !u!61 &832092521
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6818,7 +6818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerX: {fileID: 1443736956}
   player: {fileID: 0}
-  healthy: 0
+  healthy: 1
 --- !u!61 &924739817
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11688,7 +11688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerX: {fileID: 1443736956}
   player: {fileID: 0}
-  healthy: 0
+  healthy: 1
 --- !u!61 &1651826684
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13241,7 +13241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerX: {fileID: 1443736956}
   player: {fileID: 0}
-  healthy: 0
+  healthy: 1
 --- !u!61 &1849960717
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15692,6 +15692,11 @@ PrefabInstance:
       propertyPath: playerX
       value: 
       objectReference: {fileID: 1443736956}
+    - target: {fileID: 3246794782252224517, guid: 8cfc6e6f73dcf41ebaa2caab23e18f75,
+        type: 3}
+      propertyPath: healthy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3246794782252224518, guid: 8cfc6e6f73dcf41ebaa2caab23e18f75,
         type: 3}
       propertyPath: m_LocalPosition.x
