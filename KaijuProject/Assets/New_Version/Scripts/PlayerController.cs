@@ -18,9 +18,11 @@ public class PlayerController : MonoBehaviour
 
     public bool fr = true;
 
+    public bool finish = false;
+
     void Start()
     {
-
+        finish = false;
     }
 
     void Update()
@@ -101,6 +103,10 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "En_Shoot")
         {
             health--;
+        }
+        if (collision.gameObject.CompareTag("goal"))
+        {
+            finish = true;
         }
     }
 

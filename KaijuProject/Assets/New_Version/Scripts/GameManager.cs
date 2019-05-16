@@ -7,10 +7,12 @@ public class GameManager : MonoBehaviour
 {
     public GameObject playerX;
     public PlayerController player;
+    public GameObject goCanvas;
     // Start is called before the first frame update
     void Start()
     {
         player = playerX.GetComponent<PlayerController>();
+        goCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -20,6 +22,10 @@ public class GameManager : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Die");
             SceneManager.LoadScene("Level1");
+        }
+        if (player.finish)
+        {
+            goCanvas.SetActive(true);
         }
     }
 }

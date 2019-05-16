@@ -16,6 +16,13 @@ TagManager:
   - Fire
   - SpecialFloor
   - EnemyCompuertas
+  - Ground
+  - BadGround
+  - Minion
+  - Ice
+  - Enemy
+  - En_Shoot
+  - goal
   layers:
   - Default
   - TransparentFX
