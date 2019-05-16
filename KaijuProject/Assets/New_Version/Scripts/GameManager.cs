@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     {
         if (player.health <= 0)
         {
+            FindObjectOfType<AudioManager>().Play("Die");
             SceneManager.LoadScene("Level1");
         }
     }

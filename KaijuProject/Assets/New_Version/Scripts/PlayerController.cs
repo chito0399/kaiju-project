@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.up * 80;
             gameObject.GetComponent<Animator>().SetBool("jumping", true);
+            FindObjectOfType<AudioManager>().Play("Jump");
             isGrounded = false;
             isJumping = false;
         }
@@ -54,6 +55,7 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
             isJumping = true;
             gameObject.GetComponent<Animator>().SetBool("jumping", true);
+            FindObjectOfType<AudioManager>().Play("Jump");
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.up * 55;
         }
 
