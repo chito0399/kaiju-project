@@ -24,8 +24,12 @@ public class Brick : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            FindObjectOfType<AudioManager>().Play("BreakCube");
             cube.GetComponent<Animator>().SetBool("Used", true);
-            power.SetActive(true);
+            if(power != null)
+            {
+                power.SetActive(true);
+            }
         }
     }
 }

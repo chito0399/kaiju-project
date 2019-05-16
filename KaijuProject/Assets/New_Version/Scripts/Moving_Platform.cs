@@ -47,6 +47,22 @@ public class Moving_Platform : MonoBehaviour
         }
     }
 
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.collider.transform.SetParent(transform);
+        }
+    }
+
+    public void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.collider.transform.SetParent(null);
+        }
+    }
+
     public void OnDrawGizmos()
     {
         Gizmos.DrawLine(startP.transform.position, endP.transform.position);

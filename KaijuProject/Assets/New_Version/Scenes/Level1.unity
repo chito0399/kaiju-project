@@ -10724,6 +10724,12 @@ MonoBehaviour:
     pitch: 1.4
     loop: 0
     source: {fileID: 0}
+  - name: BreakCube
+    clip: {fileID: 8300000, guid: de3ad78c1808dab47b8151a4edf67ea7, type: 3}
+    volume: 1.36
+    pitch: 1.4
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1465550499
 Transform:
   m_ObjectHideFlags: 0
