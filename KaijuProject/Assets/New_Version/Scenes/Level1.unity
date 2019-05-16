@@ -1680,7 +1680,7 @@ GameObject:
   - component: {fileID: 203164707}
   m_Layer: 0
   m_Name: Goal
-  m_TagString: Untagged
+  m_TagString: goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1889,6 +1889,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy_Range (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4556672079816665873, guid: bf51bccf31ce242099e2cf800bf98329,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4556672079603699285, guid: bf51bccf31ce242099e2cf800bf98329,
         type: 3}
@@ -17301,12 +17306,12 @@ PrefabInstance:
     - target: {fileID: 7181222833796434411, guid: 75936e8e554aa4b5c8fe2720ab0e2f56,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.1
+      value: -11.41
       objectReference: {fileID: 0}
     - target: {fileID: 7181222833796434411, guid: 75936e8e554aa4b5c8fe2720ab0e2f56,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: -2.49
       objectReference: {fileID: 0}
     - target: {fileID: 7181222833796434411, guid: 75936e8e554aa4b5c8fe2720ab0e2f56,
         type: 3}

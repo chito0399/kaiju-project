@@ -8,16 +8,34 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/First_Version/Scenes2/Menu.unity
-    guid: 56dbaf659039af5428bf57113d9396ee
+    path: Assets/New_Version/Scenes/Menu.unity
+    guid: 02fa32814223cc643809970fbb05a411
   - enabled: 1
-    path: Assets/First_Version/Scenes2/ControlMenu.unity
-    guid: 9d2d629ba58dc93409681f8e597934df
+    path: Assets/New_Version/Scenes/Controls.unity
+    guid: 421112e9d80a4e74c92094d8f1f4313e
   - enabled: 1
-    path: Assets/First_Version/Scenes2/CreatorsMenu.unity
-    guid: 020a592c6ab586947a4d38621ee5e16f
+    path: Assets/New_Version/Scenes/Credits.unity
+    guid: ae461c0f16befbe4a81999c20c0005ba
   - enabled: 1
-    path: Assets/First_Version/Scenes2/FirstLevel.unity
-    guid: 88155443cd34bed429cd7244056751e5
+    path: Assets/New_Version/Scenes/Level1.unity
+    guid: 72b7b3036b4e84d9f944e1dcc7d254f1
+  - enabled: 1
+    path: Assets/New_Version/Scenes/Level2.unity
+    guid: c52e974e58ad742338beaedc2d08049e
+  - enabled: 1
+    path: Assets/New_Version/Scenes/Level3.unity
+    guid: c54bac772bf524a9294344037fe222ff
   m_configObjects: {}

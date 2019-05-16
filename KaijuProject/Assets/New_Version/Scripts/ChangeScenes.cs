@@ -25,5 +25,13 @@ public class ChangeScenes : MonoBehaviour
         SceneManager.LoadScene("Level3");
     }
 
-    
+    public void ControlsScene()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+
+    public void CreditsScene()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
