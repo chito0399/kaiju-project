@@ -8,11 +8,14 @@ public class GameManager : MonoBehaviour
     public GameObject playerX;
     public PlayerController player;
     public GameObject goCanvas;
+    public int level;
+    
     // Start is called before the first frame update
     void Start()
     {
         player = playerX.GetComponent<PlayerController>();
         goCanvas.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -28,7 +31,18 @@ public class GameManager : MonoBehaviour
         }
         if (player.finish)
         {
-            goCanvas.SetActive(true);
+            if (level == 2)
+            {
+                if (player.papers == 4)
+                {
+                    goCanvas.SetActive(true);
+                }
+            }
+            else
+            {
+                goCanvas.SetActive(true);
+            }
+            
         }
     }
 }

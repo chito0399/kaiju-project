@@ -23,6 +23,7 @@ TagManager:
   - Enemy
   - En_Shoot
   - goal
+  - paper
   layers:
   - Default
   - TransparentFX

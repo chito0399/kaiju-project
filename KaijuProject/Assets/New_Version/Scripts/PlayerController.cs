@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,9 +21,17 @@ public class PlayerController : MonoBehaviour
 
     public bool finish = false;
 
+    //[System.NonSerialized]
+    public int papers = 0;
+    public Text paperText;
+
     void Start()
     {
         finish = false;
+        if (paperText != null)
+        {
+            paperText.text = "0 / 4";
+        }
     }
 
     void Update()
@@ -107,6 +116,20 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("goal"))
         {
             finish = true;
+        }
+        if (collision.gameObject.CompareTag("paper"))
+        {
+            Destroy(collision.gameObject);
+            papers++;
+            paperText.text = papers + " / 4";
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("goal"))
+        {
+            finish = false;
         }
     }
 

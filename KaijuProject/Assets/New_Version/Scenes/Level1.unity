@@ -12197,6 +12197,7 @@ MonoBehaviour:
   playerX: {fileID: 1443736956}
   player: {fileID: 0}
   goCanvas: {fileID: 723784905}
+  level: 1
 --- !u!4 &1631690411
 Transform:
   m_ObjectHideFlags: 0
