@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
 
     public int health = 5;
     public int lives = 3;
+    public bool invinsible = false;
 
     public bool fr = true;
 
@@ -128,20 +129,26 @@ public class PlayerController : MonoBehaviour
             gameObject.GetComponent<Animator>().SetBool("jumping", false);
         }
 
-        if (collision.gameObject.tag == "Minion")
+        if (collision.gameObject.tag == "Minion" && !invinsible)
         {
             health--;
             gameObject.GetComponent<Animator>().SetBool("damage", true);
-           
+            StartCoroutine(RedBlink());
+            invinsible = true;
+
         }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "En_Shoot")
+        if (collision.gameObject.tag == "En_Shoot" || collision.gameObject.tag == "Enemy" && !invinsible)
         {
             health--;
-            gameObject.GetComponent<Animator>().SetBool("damage", true);
+            gameObject.GetComponent<Animator>().SetLayerWeight(1, 1);
+            StartCoroutine(RedBlink());
+
+            invinsible = true;
+            Debug.Log(invinsible);
 
         }
         if (collision.gameObject.CompareTag("goal"))
@@ -171,11 +178,19 @@ public class PlayerController : MonoBehaviour
         isJumping = false;
     }
 
+    IEnumerator RedBlink()
+    {
+        yield return new WaitForSeconds(0.1f);
+        invinsible = false;
+        gameObject.GetComponent<Animator>().SetLayerWeight(1, 0);
+        Debug.Log(invinsible);
+    }
+
     private void LiveController()
     {
         if (health <= 0)
         {
-            lives--;
+            lives--; 
             
         }
     }
