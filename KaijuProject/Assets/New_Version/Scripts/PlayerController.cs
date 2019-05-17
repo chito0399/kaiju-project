@@ -24,9 +24,11 @@ public class PlayerController : MonoBehaviour
     //[System.NonSerialized]
     public int papers = 0;
     public Text paperText;
+    public GameObject panelText;
 
     void Start()
     {
+        panelText.SetActive(false);
         finish = false;
         if (paperText != null)
         {
@@ -36,6 +38,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+
+        if (Input.GetKey("escape")) {
+            panelText.SetActive(true);
+
+        }
         if (Input.GetKey("a") || Input.GetKey("left"))
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1000f * Time.deltaTime, 0));
