@@ -39,7 +39,9 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey("a") || Input.GetKey("left"))
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1000f * Time.deltaTime, 0));
+            gameObject.GetComponent<Animator>().SetBool("damage", false);
             gameObject.GetComponent<Animator>().SetBool("moving", true);
+
             //gameObject.GetComponent<SpriteRenderer>().flipX = true;
             isRunning = true;
             isRight = true;
@@ -47,6 +49,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey("d") || Input.GetKey("right"))
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(1000f * Time.deltaTime, 0));
+            gameObject.GetComponent<Animator>().SetBool("damage", false);
             gameObject.GetComponent<Animator>().SetBool("moving", true);
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
             isRight = false;
@@ -65,6 +68,7 @@ public class PlayerController : MonoBehaviour
             StartCoroutine (NotJumping());
             isGrounded = false;
             isJumping = true;
+            gameObject.GetComponent<Animator>().SetBool("damage", false);
             gameObject.GetComponent<Animator>().SetBool("jumping", true);
             //FindObjectOfType<AudioManager>().Play("Jump");
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.up * 55;
@@ -93,6 +97,8 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "BadGround")
         {
             health = -5;
+            gameObject.GetComponent<Animator>().SetBool("damage", true);
+           
         }
 
         if (collision.gameObject.tag == "Ground")
@@ -104,6 +110,8 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Minion")
         {
             health--;
+            gameObject.GetComponent<Animator>().SetBool("damage", true);
+           
         }
     }
 
@@ -112,6 +120,8 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "En_Shoot")
         {
             health--;
+            gameObject.GetComponent<Animator>().SetBool("damage", true);
+
         }
         if (collision.gameObject.CompareTag("goal"))
         {
