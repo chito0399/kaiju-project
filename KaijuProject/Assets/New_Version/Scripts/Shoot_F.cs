@@ -20,7 +20,7 @@ public class Shoot_F : MonoBehaviour
         if (player.firePower == true && Input.GetKeyDown("space"))
         {
             Fire();
-            FindObjectOfType<AudioManager>().Play("Shoot");
+            //FindObjectOfType<AudioManager>().Play("Shoot");
             player.GetComponent<Animator>().SetBool("shooting_Fire", true);
         }
         else
