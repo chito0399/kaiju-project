@@ -21,8 +21,7 @@ public class PlayerController : MonoBehaviour
     public bool fr = true;
 
     public bool finish = false;
-
-    //[System.NonSerialized]
+    
     public int papers = 0;
     public Text paperText;
     //public GameObject panelText;
@@ -81,7 +80,7 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.up * 80;
             gameObject.GetComponent<Animator>().SetBool("jumping", true);
-            //FindObjectOfType<AudioManager>().Play("Jump");
+            FindObjectOfType<AudioManager>().Play("Jump");
             isGrounded = false;
             isJumping = false;
         }
@@ -92,7 +91,7 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
             gameObject.GetComponent<Animator>().SetBool("damage", false);
             gameObject.GetComponent<Animator>().SetBool("jumping", true);
-            //FindObjectOfType<AudioManager>().Play("Jump");
+            FindObjectOfType<AudioManager>().Play("Jump");
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.up * 55;
         }
 
@@ -148,7 +147,7 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(RedBlink());
 
             invinsible = true;
-            Debug.Log(invinsible);
+            //Debug.Log(invinsible);
 
         }
         if (collision.gameObject.CompareTag("goal"))
@@ -183,7 +182,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         invinsible = false;
         gameObject.GetComponent<Animator>().SetLayerWeight(1, 0);
-        Debug.Log(invinsible);
+        //Debug.Log(invinsible);
     }
 
     private void LiveController()

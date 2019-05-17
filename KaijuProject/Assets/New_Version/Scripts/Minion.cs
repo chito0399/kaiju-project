@@ -59,10 +59,10 @@ public class Minion : MonoBehaviour
         }
     }
 
-    public void OnDrawGizmos()
+    /*public void OnDrawGizmos()
     {
         Gizmos.DrawLine(startP.transform.position, endP.transform.position);
-    }
+    }*/
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

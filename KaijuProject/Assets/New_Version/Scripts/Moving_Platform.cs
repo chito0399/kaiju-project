@@ -63,8 +63,8 @@ public class Moving_Platform : MonoBehaviour
         }
     }
 
-    public void OnDrawGizmos()
+    /*public void OnDrawGizmos()
     {
         Gizmos.DrawLine(startP.transform.position, endP.transform.position);
-    }
+    }*/
 }
