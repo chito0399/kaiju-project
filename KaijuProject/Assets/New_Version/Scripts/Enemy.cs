@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+
+
     public int health;
 
     public GameObject playerX;
@@ -49,7 +51,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            player.health=-5;
+            player.health = -5;
         }
     }
 
