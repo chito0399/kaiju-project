@@ -24,11 +24,11 @@ public class PlayerController : MonoBehaviour
     //[System.NonSerialized]
     public int papers = 0;
     public Text paperText;
-    public GameObject panelText;
-    public bool pauseBool = false;
+    //public GameObject panelText;
+    //public bool pauseBool = false;
     void Start()
     {
-        panelText.SetActive(false);
+        //panelText.SetActive(false);
         finish = false;
         if (paperText != null)
         {
@@ -39,21 +39,21 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKey("escape")) {
-            pauseBool = !pauseBool;
-            if (pauseBool)
-            {
-                panelText.SetActive(true);
-                Time.timeScale = 0;
-            }
+        //if (Input.GetKey("escape")) {
+        //    //pauseBool = !pauseBool;
+        //    //if (pauseBool)
+        //    //{
+        //        panelText.SetActive(true);
+        //        Time.timeScale = 0;
+        //    //}
 
-            else if (!pauseBool)
-            {
-                panelText.SetActive(false);
-                Time.timeScale = 1;
-            }
+        //    //else if (!pauseBool)
+        //    //{
+        //    //    panelText.SetActive(false);
+        //    //    Time.timeScale = 1;
+        //    //}
 
-        }
+        //}
        
 
 
