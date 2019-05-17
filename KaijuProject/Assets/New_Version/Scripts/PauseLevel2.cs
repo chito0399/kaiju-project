@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class PauseLevel2 : MonoBehaviour
 {
     public GameObject panelText;
     public bool pauseBool = false;
@@ -43,7 +43,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void Restart()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level2");
         Time.timeScale = 1;
     }
 }

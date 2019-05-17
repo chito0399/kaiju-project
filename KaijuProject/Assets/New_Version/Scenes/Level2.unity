@@ -4279,6 +4279,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2975910304253981541, guid: ad383d767a6e647e88403db3f693002f, type: 3}
     - {fileID: 3942601794082562586, guid: ad383d767a6e647e88403db3f693002f, type: 3}
+    - {fileID: 5336638700855773953, guid: ad383d767a6e647e88403db3f693002f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ad383d767a6e647e88403db3f693002f, type: 3}
 --- !u!1 &660441988
 GameObject:
@@ -11599,12 +11600,12 @@ PrefabInstance:
     - target: {fileID: 7181222833796434411, guid: 75936e8e554aa4b5c8fe2720ab0e2f56,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.6
+      value: 117.3
       objectReference: {fileID: 0}
     - target: {fileID: 7181222833796434411, guid: 75936e8e554aa4b5c8fe2720ab0e2f56,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: -36.9
       objectReference: {fileID: 0}
     - target: {fileID: 7181222833796434411, guid: 75936e8e554aa4b5c8fe2720ab0e2f56,
         type: 3}
@@ -12257,9 +12258,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844254627}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c893ad427380e47f6912cdcbbe65b7dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cdbb9bba4ad54131b26cadfcc650ede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   panelText: {fileID: 443786857}
