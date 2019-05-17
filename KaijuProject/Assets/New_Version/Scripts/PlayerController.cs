@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     public int papers = 0;
     public Text paperText;
     public GameObject panelText;
-
+    public bool pauseBool = false;
     void Start()
     {
         panelText.SetActive(false);
@@ -40,9 +40,23 @@ public class PlayerController : MonoBehaviour
     {
 
         if (Input.GetKey("escape")) {
-            panelText.SetActive(true);
+            pauseBool = !pauseBool;
+            if (pauseBool)
+            {
+                panelText.SetActive(true);
+                Time.timeScale = 0;
+            }
+
+            else if (!pauseBool)
+            {
+                panelText.SetActive(false);
+                Time.timeScale = 1;
+            }
 
         }
+       
+
+
         if (Input.GetKey("a") || Input.GetKey("left"))
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1000f * Time.deltaTime, 0));
